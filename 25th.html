@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Lilian 💙💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at top left, rgba(173, 115, 255, 0.95), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(68, 182, 255, 0.95), transparent 30%),
+        linear-gradient(135deg, #190035 0%, #28105d 38%, #075985 100%);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.85), transparent);
+      z-index: 0;
+    }
+
+    .sparkle {
+      position: fixed;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 0 18px #fff, 0 0 30px #a5d8ff;
+      opacity: 0.75;
+      animation: twinkle 3.5s infinite ease-in-out;
+      z-index: 1;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { transform: scale(.4); opacity: .25; }
+      50% { transform: scale(1.2); opacity: .95; }
+    }
+
+    .balloon {
+      position: fixed;
+      bottom: -160px;
+      width: 74px;
+      height: 96px;
+      border-radius: 50% 50% 46% 46%;
+      background: linear-gradient(145deg, #d8b4fe, #60a5fa);
+      box-shadow: inset -10px -14px 20px rgba(30, 27, 75, .24), 0 18px 40px rgba(0,0,0,.25);
+      animation: floatBalloon 14s linear infinite;
+      z-index: 2;
+      opacity: .75;
+    }
+
+    .balloon::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 90px;
+      background: rgba(255,255,255,.5);
+      left: 50%;
+      top: 92px;
+    }
+
+    @keyframes floatBalloon {
+      from { transform: translateY(0) rotate(-3deg); }
+      to { transform: translateY(-125vh) rotate(8deg); }
+    }
+
+    .container {
+      position: relative;
+      z-index: 5;
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 16px;
+      z-index: 20;
+      margin: 16px auto 0;
+      width: min(1180px, calc(100% - 36px));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,.10);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, .25);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: .4px;
+    }
+
+    .brand span {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #a78bfa, #38bdf8);
+      box-shadow: 0 0 25px rgba(96, 165, 250, .65);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 8px;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,.86);
+      text-decoration: none;
+      font-size: 14px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      transition: .25s ease;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+      background: rgba(255,255,255,.14);
+    }
+
+    .hero {
+      min-height: calc(100vh - 86px);
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 34px;
+      align-items: center;
+      padding: 54px 0 70px;
+    }
+
+    .badge {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.13);
+      border: 1px solid rgba(255,255,255,.20);
+      box-shadow: 0 16px 40px rgba(0,0,0,.16);
+      color: #e0f2fe;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(45px, 7vw, 92px);
+      line-height: .95;
+      letter-spacing: -3px;
+      margin-bottom: 22px;
+    }
+
+    h1 .script {
+      display: block;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.15em;
+      letter-spacing: 0;
+      color: #e9d5ff;
+      text-shadow: 0 0 35px rgba(216, 180, 254, .7);
+    }
+
+    .hero p {
+      max-width: 640px;
+      color: rgba(255,255,255,.82);
+      font-size: 17px;
+      line-height: 1.85;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 800;
+      padding: 15px 22px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+      box-shadow: 0 18px 40px rgba(56, 189, 248, .25), 0 0 0 1px rgba(255,255,255,.14) inset;
+      transition: transform .25s ease, box-shadow .25s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 54px rgba(139, 92, 246, .34), 0 0 0 1px rgba(255,255,255,.2) inset;
+    }
+
+    .btn.secondary {
+      background: rgba(255,255,255,.13);
+      border: 1px solid rgba(255,255,255,.2);
+    }
+
+    .birthday-card {
+      position: relative;
+      min-height: 520px;
+      border-radius: 36px;
+      padding: 26px;
+      border: 1px solid rgba(255,255,255,.22);
+      background: linear-gradient(145deg, rgba(255,255,255,.20), rgba(255,255,255,.07));
+      backdrop-filter: blur(22px);
+      box-shadow: 0 30px 80px rgba(2, 6, 23, .36);
+      overflow: hidden;
+    }
+
+    .birthday-card::before {
+      content: "";
+      position: absolute;
+      inset: -90px -90px auto auto;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background: #93c5fd;
+      filter: blur(12px);
+      opacity: .45;
+    }
+
+    .birthday-card::after {
+      content: "";
+      position: absolute;
+      left: -80px;
+      bottom: -80px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: #c084fc;
+      filter: blur(10px);
+      opacity: .42;
+    }
+
+    .cake-wrap {
+      position: relative;
+      z-index: 2;
+      height: 310px;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .cake {
+      position: relative;
+      width: 270px;
+      height: 175px;
+      border-radius: 30px 30px 24px 24px;
+      background: linear-gradient(180deg, #f0abfc 0%, #a78bfa 48%, #60a5fa 100%);
+      box-shadow: 0 22px 45px rgba(15, 23, 42, .32);
+    }
+
+    .cake::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      top: 42px;
+      height: 26px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.45);
+      box-shadow: 0 56px 0 rgba(255,255,255,.32);
+    }
+
+    .icing {
+      position: absolute;
+      inset: -24px 0 auto;
+      height: 58px;
+      border-radius: 34px 34px 24px 24px;
+      background: linear-gradient(135deg, #fff, #dbeafe);
+    }
+
+    .icing span {
+      position: absolute;
+      top: 38px;
+      width: 27px;
+      height: 43px;
+      border-radius: 0 0 999px 999px;
+      background: #dbeafe;
+    }
+
+    .icing span:nth-child(1) { left: 36px; height: 52px; }
+    .icing span:nth-child(2) { left: 105px; height: 36px; }
+    .icing span:nth-child(3) { right: 54px; height: 50px; }
+
+    .candle {
+      position: absolute;
+      width: 18px;
+      height: 78px;
+      bottom: 166px;
+      border-radius: 9px;
+      background: repeating-linear-gradient(45deg, #fff 0 8px, #7dd3fc 8px 16px, #c084fc 16px 24px);
+      box-shadow: 0 8px 18px rgba(0,0,0,.15);
+    }
+
+    .candle.one { left: 78px; }
+    .candle.two { left: 126px; height: 94px; }
+    .candle.three { right: 78px; }
+
+    .flame {
+      position: absolute;
+      left: 50%;
+      top: -32px;
+      width: 22px;
+      height: 32px;
+      transform: translateX(-50%);
+      border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+      background: linear-gradient(#fff7ad, #fb7185 72%);
+      filter: drop-shadow(0 0 14px #fde68a);
+      animation: flame .9s infinite alternate ease-in-out;
+    }
+
+    @keyframes flame {
+      from { transform: translateX(-50%) rotate(-7deg) scale(.94); }
+      to { transform: translateX(-50%) rotate(7deg) scale(1.08); }
+    }
+
+    .card-text {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .card-text h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 48px;
+      color: #fff;
+      text-shadow: 0 0 25px rgba(147, 197, 253, .7);
+    }
+
+    .card-text p {
+      margin: 12px auto 0;
+      max-width: 430px;
+      color: rgba(255,255,255,.78);
+      line-height: 1.8;
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 38px;
+    }
+
+    .section-title .mini {
+      color: #bfdbfe;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(30px, 4vw, 54px);
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .section-title p {
+      color: rgba(255,255,255,.76);
+      line-height: 1.8;
+    }
+
+    .wish-box {
+      padding: 34px;
+      border-radius: 34px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.11);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 22px 60px rgba(0,0,0,.24);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .letter {
+      padding: 30px;
+      border-radius: 28px;
+      background: linear-gradient(145deg, rgba(255,255,255,.20), rgba(255,255,255,.07));
+      border: 1px solid rgba(255,255,255,.18);
+      min-height: 100%;
+    }
+
+    .letter h3 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px;
+      margin-bottom: 16px;
+      color: #dbeafe;
+    }
+
+    .letter p {
+      color: rgba(255,255,255,.82);
+      line-height: 1.92;
+      margin-bottom: 14px;
+    }
+
+    .highlight {
+      color: #f0abfc;
+      font-weight: 700;
+    }
+
+    .memory-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .memory-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 210px;
+      padding: 24px;
+      border-radius: 28px;
+      background: linear-gradient(145deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
+      border: 1px solid rgba(255,255,255,.17);
+      box-shadow: 0 18px 44px rgba(0,0,0,.20);
+      transition: .3s ease;
+    }
+
+    .memory-card:hover {
+      transform: translateY(-8px);
+      background: linear-gradient(145deg, rgba(255,255,255,.25), rgba(255,255,255,.08));
+    }
+
+    .memory-card .icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #c084fc, #38bdf8);
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .memory-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .memory-card p {
+      color: rgba(255,255,255,.76);
+      line-height: 1.75;
+      font-size: 14px;
+    }
+
+    .interactive {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .panel {
+      border-radius: 34px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.11);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 22px 60px rgba(0,0,0,.24);
+      padding: 30px;
+      overflow: hidden;
+    }
+
+    .gift-box {
+      min-height: 390px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .gift {
+      position: relative;
+      width: 190px;
+      height: 160px;
+      background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+      border-radius: 20px;
+      box-shadow: 0 25px 60px rgba(0,0,0,.32);
+      cursor: pointer;
+      animation: bounce 2.4s infinite ease-in-out;
+      margin: 20px auto;
+    }
+
+    .gift::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 36px;
+      height: 100%;
+      background: rgba(255,255,255,.42);
+    }
+
+    .gift::after {
+      content: "";
+      position: absolute;
+      left: -14px;
+      right: -14px;
+      top: -34px;
+      height: 48px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #e9d5ff, #bfdbfe);
+      box-shadow: 0 10px 25px rgba(0,0,0,.18);
+    }
+
+    .ribbon {
+      position: absolute;
+      left: 50%;
+      top: -84px;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 70px;
+    }
+
+    .ribbon::before,
+    .ribbon::after {
+      content: "";
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      border: 13px solid rgba(255,255,255,.72);
+      border-radius: 50% 50% 0 50%;
+    }
+
+    .ribbon::before {
+      left: 0;
+      transform: rotate(-42deg);
+    }
+
+    .ribbon::after {
+      right: 0;
+      transform: rotate(132deg);
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .secret-message {
+      display: none;
+      margin-top: 18px;
+      padding: 22px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.18);
+      line-height: 1.8;
+      color: rgba(255,255,255,.84);
+      animation: pop .45s ease forwards;
+    }
+
+    @keyframes pop {
+      from { opacity: 0; transform: scale(.94) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .form-area h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .form-area p {
+      color: rgba(255,255,255,.76);
+      line-height: 1.8;
+      margin-bottom: 22px;
+    }
+
+    textarea, input {
+      width: 100%;
+      border: 1px solid rgba(255,255,255,.18);
+      outline: none;
+      color: #fff;
+      background: rgba(255,255,255,.12);
+      border-radius: 22px;
+      padding: 16px 18px;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 14px;
+      resize: none;
+      box-shadow: 0 0 0 0 rgba(125,211,252,0);
+      transition: .25s ease;
+    }
+
+    textarea:focus, input:focus {
+      border-color: rgba(191, 219, 254, .65);
+      box-shadow: 0 0 0 5px rgba(125,211,252,.12);
+    }
+
+    textarea::placeholder, input::placeholder {
+      color: rgba(255,255,255,.55);
+    }
+
+    .posted-wish {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, rgba(192, 132, 252, .25), rgba(56, 189, 248, .18));
+      border: 1px solid rgba(255,255,255,.18);
+      min-height: 90px;
+      color: rgba(255,255,255,.86);
+      line-height: 1.8;
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 18px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 18px;
+      align-items: start;
+      padding: 22px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.16);
+      box-shadow: 0 18px 40px rgba(0,0,0,.18);
+    }
+
+    .timeline-date {
+      width: 70px;
+      height: 70px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #7c3aed, #0284c7);
+      font-weight: 900;
+      box-shadow: 0 14px 32px rgba(0,0,0,.22);
+    }
+
+    .timeline-content h3 {
+      margin-bottom: 8px;
+    }
+
+    .timeline-content p {
+      color: rgba(255,255,255,.76);
+      line-height: 1.75;
+      font-size: 14px;
+    }
+
+    .footer-card {
+      text-align: center;
+      border-radius: 36px;
+      padding: 56px 28px;
+      background: linear-gradient(135deg, rgba(139, 92, 246, .30), rgba(56, 189, 248, .22));
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 26px 70px rgba(0,0,0,.26);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer-card::before {
+      content: "💙 💜 ✨ 🎂 ✨ 💜 💙";
+      position: absolute;
+      left: 50%;
+      top: 18px;
+      transform: translateX(-50%);
+      font-size: 25px;
+      opacity: .9;
+      white-space: nowrap;
+    }
+
+    .footer-card h2 {
+      margin-top: 26px;
+      font-size: clamp(32px, 5vw, 62px);
+      line-height: 1.1;
+    }
+
+    .footer-card h2 span {
+      display: block;
+      font-family: 'Dancing Script', cursive;
+      color: #e9d5ff;
+      font-size: 1.2em;
+    }
+
+    .footer-card p {
+      max-width: 720px;
+      margin: 18px auto 0;
+      color: rgba(255,255,255,.80);
+      line-height: 1.9;
+    }
+
+    .music-btn {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 40;
+      width: 58px;
+      height: 58px;
+      border: none;
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+      box-shadow: 0 18px 44px rgba(0,0,0,.28);
+      font-size: 23px;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      pointer-events: none;
+      font-size: 20px;
+      animation: heartRise 5s linear forwards;
+      z-index: 50;
+    }
+
+    @keyframes heartRise {
+      0% { opacity: 0; transform: translateY(0) scale(.8) rotate(0); }
+      12% { opacity: 1; }
+      100% { opacity: 0; transform: translateY(-105vh) scale(1.7) rotate(22deg); }
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        border-radius: 26px;
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+      }
+
+      .hero,
+      .wish-box,
+      .interactive {
+        grid-template-columns: 1fr;
+      }
+
+      .birthday-card {
+        min-height: auto;
+      }
+
+      .memory-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .container,
+      nav {
+        width: min(100% - 22px, 1180px);
+      }
+
+      .hero {
+        padding-top: 36px;
+      }
+
+      h1 {
+        letter-spacing: -1.4px;
+      }
+
+      .wish-box,
+      .panel,
+      .letter {
+        padding: 22px;
+      }
+
+      .cake {
+        width: 230px;
+      }
+
+      .candle.one { left: 62px; }
+      .candle.two { left: 106px; }
+      .candle.three { right: 62px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand"><span>🎂</span> Birthday Lilianku</div>
+    <div class="nav-links">
+      <a href="#ucapan">Ucapan</a>
+      <a href="#alasan">Alasan</a>
+      <a href="#surprise">Surprise</a>
+      <a href="#doa">Doa</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="badge">✨ Hari spesial untuk orang paling spesial</div>
+        <h1>Happy Birthday yang ke 25 Tahun<span class="script">Khalila Velilian</span></h1>
+        <p>
+          Di hari yang cantik ini, semoga Lilianku selalu dikelilingi kebahagiaan, cinta yang tulus,
+          dan hal-hal baik yang datang tanpa henti. Website kecil ini dibuat khusus untukmu,
+          sebagai bentuk sederhana dari rasa sayang yang besar. 💙💜
+        </p>
+        <div class="hero-buttons">
+          <a href="#ucapan" class="btn">Buka Ucapan 💌</a>
+          <a href="#surprise" class="btn secondary">Lihat Surprise 🎁</a>
+        </div>
+      </div>
+
+      <div class="birthday-card">
+        <div class="cake-wrap">
+          <div class="cake">
+            <div class="icing"><span></span><span></span><span></span></div>
+            <div class="candle one"><div class="flame"></div></div>
+            <div class="candle two"><div class="flame"></div></div>
+            <div class="candle three"><div class="flame"></div></div>
+          </div>
+        </div>
+        <div class="card-text">
+          <h2>Untuk Lilian</h2>
+          <p>Semoga senyummu selalu jadi alasan hari-hari terasa lebih indah.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ucapan">
+      <div class="section-title">
+        <div class="mini">Ucapan Manis</div>
+        <h2>Pesan kecil untuk seseorang yang sangat berarti</h2>
+        <p>Setiap kata di sini mungkin sederhana, tapi semuanya ditulis dengan rasa yang tulus.</p>
+      </div>
+
+      <div class="wish-box">
+        <div class="letter">
+          <h3>Dear Lilian,</h3>
+          <p>
+            Selamat ulang tahun untuk perempuan yang cantik, baik, dan selalu punya cara untuk membuat hari terasa lebih hangat.
+            Semoga di usia barumu ini, Lilianku semakin bahagia, semakin kuat, dan semakin dekat dengan semua mimpi yang ingin diraih.
+          </p>
+          <p>
+            Terima kasih karena sudah hadir dan menjadi bagian yang sangat indah dalam hidupku.
+            Aku berharap hari ini membawa banyak senyum untukmu, karena kamu pantas mendapatkan kebahagiaan yang paling manis.
+          </p>
+          <p>
+            Tetap jadi Lilianku yang ceria, lembut, dan penuh cinta. Aku akan selalu mendoakan yang terbaik untukmu,
+            hari ini, besok, dan seterusnya. <span class="highlight">I love you, Lilian.</span> 💙💜
+          </p>
+        </div>
+
+        <div class="letter">
+          <h3>Harapan Untukmu</h3>
+          <p>
+            Semoga setiap langkah Lilianku selalu dimudahkan, setiap doa baik segera dikabulkan,
+            dan setiap sedih diganti dengan bahagia yang lebih besar.
+          </p>
+          <p>
+            Semoga kamu selalu dikelilingi orang-orang yang menyayangimu dengan tulus,
+            dan semoga aku bisa terus menjadi salah satu alasan kamu tersenyum setiap hari.
+          </p>
+          <p>
+            Hari ini bukan hanya tentang bertambahnya usia, tapi juga tentang merayakan betapa berharganya kamu.
+            Kamu istimewa, kamu berharga, dan kamu sangat dicintai. ✨
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="alasan">
+      <div class="section-title">
+        <div class="mini">Kenapa Kamu Spesial</div>
+        <h2>Beberapa alasan kenapa Lilianku selalu istimewa</h2>
+        <p>Karena hal-hal kecil tentangmu sering menjadi bagian paling indah untuk diingat.</p>
+      </div>
+
+      <div class="memory-grid">
+        <div class="memory-card">
+          <div class="icon">😊</div>
+          <h3>Senyummu Menenangkan</h3>
+          <p>Senyum kamu punya cara sederhana untuk membuat suasana jadi lebih baik dan hati terasa lebih ringan.</p>
+        </div>
+        <div class="memory-card">
+          <div class="icon">💙</div>
+          <h3>Hatimu Lembut</h3>
+          <p>Kebaikanmu terlihat dari perhatian kecil yang sering kamu berikan tanpa harus diminta.</p>
+        </div>
+        <div class="memory-card">
+          <div class="icon">✨</div>
+          <h3>Kamu Berharga</h3>
+          <p>Kehadiranmu membuat banyak hal terasa lebih indah, lebih hangat, dan lebih berarti.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="surprise">
+      <div class="section-title">
+        <div class="mini">Surprise Area</div>
+        <h2>Ada hadiah kecil yang bisa dibuka</h2>
+        <p>Klik kotak kadonya, lalu lihat pesan manis yang muncul khusus untuk Lilianku.</p>
+      </div>
+
+      <div class="interactive">
+        <div class="panel gift-box">
+          <div>
+            <h3>Kado Virtual Untukmu</h3>
+            <div class="gift" id="gift">
+              <div class="ribbon"></div>
+            </div>
+            <button class="btn" id="openGift">Buka Kadonya 🎁</button>
+            <div class="secret-message" id="secretMessage">
+              Lilianku, kamu adalah hadiah paling indah yang pernah hadir di hidupku.
+              Di ulang tahunmu ini, aku cuma ingin bilang: semoga kamu selalu bahagia,
+              selalu dicintai dengan tulus, dan selalu tahu bahwa kamu sangat berarti untukku. 💙💜
+            </div>
+          </div>
+        </div>
+
+        <div class="panel form-area">
+          <h3>Tulis harapan manis untuk Lilian</h3>
+          <p>Ketik ucapan atau harapan, lalu tampilkan di kartu cantik ini.</p>
+          <input type="text" id="sender" placeholder="Dari siapa? Contoh: Dari orang yang sayang kamu" />
+          <textarea id="wishInput" rows="7" placeholder="Tulis pesan manismu di sini..."></textarea>
+          <button class="btn" id="showWish">Tampilkan Pesan 💌</button>
+          <div class="posted-wish" id="postedWish">
+            Pesanmu akan muncul di sini dengan tampilan manis untuk Lilian.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="doa">
+      <div class="section-title">
+        <div class="mini">Doa Baik</div>
+        <h2>Doa-doa kecil untuk tahun baru dalam hidupmu</h2>
+        <p>Semoga setiap doa baik menemukan jalan terbaiknya untuk Lilian.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">01</div>
+          <div class="timeline-content">
+            <h3>Semoga Selalu Bahagia</h3>
+            <p>Semoga Lilianku selalu menemukan alasan untuk tersenyum, bahkan dari hal-hal kecil yang sederhana.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">02</div>
+          <div class="timeline-content">
+            <h3>Semoga Mimpimu Tercapai</h3>
+            <p>Semoga semua hal yang Lilianku perjuangkan pelan-pelan mendekat dan menjadi kenyataan yang indah.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">03</div>
+          <div class="timeline-content">
+            <h3>Semoga Cinta Selalu Menjagamu</h3>
+            <p>Semoga Lilianku selalu merasa disayangi, dihargai, dan ditemani oleh orang-orang yang tulus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="footer-card">
+        <h2>Once again, <span>Happy Birthday Lilian</span></h2>
+        <p>
+          Semoga hari ulang tahun ini menjadi awal dari cerita baru yang lebih indah.
+          Terima kasih sudah menjadi seseorang yang begitu spesial. Kamu pantas mendapatkan cinta,
+          kebahagiaan, dan kejutan terbaik di dunia. 💙💜
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <button class="music-btn" id="musicBtn" title="Klik untuk efek hati">💜</button>
+
+  <script>
+    const body = document.body;
+
+    function createSparkles() {
+      for (let i = 0; i < 38; i++) {
+        const sparkle = document.createElement('span');
+        sparkle.className = 'sparkle';
+        sparkle.style.left = Math.random() * 100 + 'vw';
+        sparkle.style.top = Math.random() * 100 + 'vh';
+        sparkle.style.animationDelay = Math.random() * 4 + 's';
+        sparkle.style.animationDuration = 2.5 + Math.random() * 3 + 's';
+        body.appendChild(sparkle);
+      }
+    }
+
+    function createBalloons() {
+      const positions = [7, 18, 83, 92];
+      positions.forEach((pos, index) => {
+        const balloon = document.createElement('div');
+        balloon.className = 'balloon';
+        balloon.style.left = pos + 'vw';
+        balloon.style.animationDelay = (index * 2.3) + 's';
+        balloon.style.animationDuration = (13 + index * 2) + 's';
+        body.appendChild(balloon);
+      });
+    }
+
+    function releaseHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerText = Math.random() > 0.5 ? '💙' : '💜';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = (18 + Math.random() * 22) + 'px';
+      heart.style.animationDuration = (4 + Math.random() * 2.5) + 's';
+      body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6500);
+    }
+
+    document.getElementById('openGift').addEventListener('click', () => {
+      const secret = document.getElementById('secretMessage');
+      secret.style.display = 'block';
+      for (let i = 0; i < 24; i++) {
+        setTimeout(releaseHeart, i * 85);
+      }
+    });
+
+    document.getElementById('gift').addEventListener('click', () => {
+      document.getElementById('openGift').click();
+    });
+
+    document.getElementById('showWish').addEventListener('click', () => {
+      const sender = document.getElementById('sender').value.trim();
+      const wish = document.getElementById('wishInput').value.trim();
+      const postedWish = document.getElementById('postedWish');
+
+      if (!wish) {
+        postedWish.innerHTML = 'Tulis dulu pesannya ya, supaya Lilian bisa baca ucapan yang manis. 💌';
+        return;
+      }
+
+      postedWish.innerHTML = `
+        <strong>${sender || 'Untuk Lilian tersayang'}:</strong><br>
+        ${wish.replace(/\n/g, '<br>')}<br><br>
+        <em>Semoga pesan ini membuat Lilian tersenyum hari ini. 💙💜</em>
+      `;
+
+      for (let i = 0; i < 16; i++) {
+        setTimeout(releaseHeart, i * 100);
+      }
+    });
+
+    document.getElementById('musicBtn').addEventListener('click', () => {
+      for (let i = 0; i < 18; i++) {
+        setTimeout(releaseHeart, i * 80);
+      }
+    });
+
+    setInterval(() => {
+      releaseHeart();
+    }, 2600);
+
+    createSparkles();
+    createBalloons();
+  </script>
+</body>
+</html>
